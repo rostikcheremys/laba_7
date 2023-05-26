@@ -1,0 +1,37 @@
+<Window x:Class="Program.TaskSecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Program"
+        mc:Ignorable="d"
+        Title="TaskSecondWindow" Height="350" Width="525">
+    <Grid>
+        <Rectangle Fill="DodgerBlue"/>
+        
+        <Canvas>
+            <!-- Тіло пташки -->
+            <Ellipse Width="100" Height="50" Canvas.Left="100" Canvas.Top="150" Fill="Gold"/>
+            
+            <!-- Голова пташки -->
+            <Ellipse Width="50" Height="50" Canvas.Left="80" Canvas.Top="135" Fill="Gold"/>
+            
+            <!-- Око пташки -->
+            <Ellipse Width="10" Height="10" Canvas.Left="105" Canvas.Top="145" Fill="Black"/>
+            <Ellipse Width="10" Height="10" Canvas.Left="90" Canvas.Top="145" Fill="Black"/>
+            
+            <!-- Дзьоб пташки -->
+            <Polygon Points="90,160 120,170 120,150" Fill="Orange"  Canvas.Left="-20" Canvas.Top="5"/>
+            
+            <!-- Крила пташки -->
+            <Polygon Points="130,165 150,170,170,200 200,100" Fill="Gold"/>
+            <Polygon Points="140,165 170,170,160,140 110,100" Fill="Gold"/>
+            
+            <!-- Ноги пташки -->
+            <Line X1="150" Y1="220" X2="150" Y2="198" Stroke="Black" StrokeThickness="3"/>
+            <Line X1="150" Y1="220" X2="140" Y2="220" Stroke="Black" StrokeThickness="3"/>
+            <Line X1="165" Y1="220" X2="165" Y2="198" Stroke="Black" StrokeThickness="3"/>
+            <Line X1="165" Y1="220" X2="155" Y2="220" Stroke="Black" StrokeThickness="3"/>
+        </Canvas>
+    </Grid>
+</Window>
